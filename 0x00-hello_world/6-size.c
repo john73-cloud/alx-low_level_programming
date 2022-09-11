@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
+ * main - Entry point
  * Description - 'main'
- * return (0) - always a success
+ * Return - return (0) - always a success
  */
 int main(void)
 {
