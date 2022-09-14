@@ -1,13 +1,13 @@
-#include <unistd.h>
-#include "main.h"
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
+#include "t.h"
+
+void print_alphabet(void)
 {
-	return (write(1, &c, 1));
+	int i;
+        char al[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
+                'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        for (i = 0; i < 26; i++)
+        {
+                _putchar(al[i]);
+        }
+        _putchar('\n');
 }

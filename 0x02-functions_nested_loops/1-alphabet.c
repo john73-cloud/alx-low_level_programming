@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include "1-main.h"
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
