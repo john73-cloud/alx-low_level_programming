@@ -9,7 +9,6 @@
 void print_line(int n)
 {
 	int b = 0;
-	int i = 0;
 
 		for (b = 0; b < n; b++)
 		{
