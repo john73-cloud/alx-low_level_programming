@@ -8,17 +8,18 @@
  */
 void more_numbers(void)
 {
+	int b = 0;
 	int i;
 	int c[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
-	while (i <= 10)
+	while (b <= 10)
 	{
 	for (i = 0; i < 10; i++)
 	{
 		putchar(c[i]);
 	}
 	putchar('\n');
-	i++;
+	b++;
 	}
 putchar('\n');
 }
