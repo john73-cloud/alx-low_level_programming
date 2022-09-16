@@ -3,18 +3,24 @@
 #include "main.h"
 /**
  * _isupper - check the code.
- *
+ *@c: an integer
  * Return: zero  0 or one 1.
  */
 
 int _isupper(int c)
 {
-	if(isupper(c))
+
+	int m = isupper(c);
+	int r;
+
+	if (m > 0)
 	{
-		return (1);
+		r = 1;
 	}
 	else
 	{
-		return (0);
+		r = 0;
 	}
+
+	return (r);
 }
