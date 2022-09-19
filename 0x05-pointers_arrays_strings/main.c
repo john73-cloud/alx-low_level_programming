@@ -1,21 +1,15 @@
-#include <stdio.h>
-
-void swap_int(int *, int *);
+#include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int a;
-	int b;
+    char *str;
 
-	a = 98;
-	b = 42;
-	printf("%d, %d\n", a, b);
-	swap_int(&a, &b);
-	printf("%d, %d\n", a, b);
-	return (0);
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    print_rev(str);
+    return (0);
 }

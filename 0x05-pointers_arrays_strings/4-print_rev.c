@@ -9,20 +9,13 @@
 
 void print_rev(char *s)
 {
-	int begin, end, count = 0;
-	char r[99999999999];
+	int i;
+	int len = strlen(s);
 
-	while (s[count] != '\0')
+	for(i = len; i > 0; i--)
 	{
-		count++;
+		putchar(s[i]);
 	}
-
-	end = count - 1;
-	for (begin = 0; begin < count; begin++)
-	{
-		r[begin] = s[end];
-		end--;
-	}
-	printf("%s", r);
+	printf("\n");
 }
 
