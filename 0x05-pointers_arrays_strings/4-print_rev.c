@@ -12,10 +12,10 @@ void print_rev(char *s)
 	int i;
 	int len = strlen(s);
 
-	for(i = len -1; i > -1; i--)
+	for (i = len - 1; i > -1; i--)
 	{
 		putchar(s[i]);
 	}
-	printf ("\n");
+	printf("\n");
 }
 
