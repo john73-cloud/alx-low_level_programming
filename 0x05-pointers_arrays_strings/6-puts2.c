@@ -12,6 +12,8 @@ void puts2(char *str)
 	int i;
 	int len = strlen(str);
 
+	if (str != "")
+	{
 	putchar(str[0]);
 	for (i = 1; i < len; i++)
 	{
@@ -19,6 +21,7 @@ void puts2(char *str)
 		{
 			putchar(str[i]);
 		}
+	}
 	}
 	putchar('\n');
 }
