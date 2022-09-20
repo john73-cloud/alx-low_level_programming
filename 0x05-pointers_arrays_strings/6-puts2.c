@@ -12,7 +12,7 @@ void puts2(char *str)
 	int i;
 	int len = strlen(str);
 
-	if (str != "")
+	if (strcmp(str, "") != 0)
 	{
 	putchar(str[0]);
 	for (i = 1; i < len; i++)
