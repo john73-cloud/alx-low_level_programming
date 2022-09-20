@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 /**
-* _srcpy - reset num to 98
+* _strcpy - reset num to 98
 * @dest: variable
 * @src: variable
 * Return: main
 */
 
-char *_srcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	srcpy(dest, src);
+	strcpy(dest, src);
 	return (dest);
 }
