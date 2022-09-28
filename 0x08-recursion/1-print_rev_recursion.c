@@ -12,6 +12,10 @@ int i = 0;
  */
 void main_print(void)
 {
+	if (str == "")
+	{
+		return;
+	}
 	putchar (str[i]);
 	i = i - 1;
 	if (i == 0)
@@ -29,7 +33,7 @@ void main_print(void)
 void _print_rev_recursion(char *s)
 {
         len = strlen(s);
-	i = len;
+	i = len - 1;
 	str = s;
 
 	main_print();
