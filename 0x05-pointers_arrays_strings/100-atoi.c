@@ -9,7 +9,12 @@
 
 int _atoi(char *s)
 {
-	int r = atoi(s);
+	int i;
+	int res = 0;
 
-	return (r);
+	for (i = 0; str[i] != '\0'; ++i)
+	{
+		res = res * 10 + str[i] - '0';
+	}
+	return (res);
 }

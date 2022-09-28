@@ -12,7 +12,7 @@ int i = 0;
  */
 void main_print(void)
 {
-	if (str == "")
+	if (strcmp(str, "") == 0)
 	{
 		return;
 	}
