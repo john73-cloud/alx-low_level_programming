@@ -1,16 +1,13 @@
 #include <stdio.h>
 #include <string.h>
 
-char *str;
-int len;
-int i = 0;
-
 /**
  * main_print - string length
- * @s: str
- * Return: unsigned int
+ * @str: str
+ * @i: int
+ * Return: main
  */
-void main_print(void)
+void main_print(int i, char *str)
 {
 	if (strcmp(str, "") == 0)
 	{
@@ -23,7 +20,7 @@ void main_print(void)
 		putchar ('\n');
 		return;
 	}
-	main_print();
+	main_print(i, str);
 }
 /**
  * _print_rev_recursion - string length
@@ -32,9 +29,12 @@ void main_print(void)
  */
 void _print_rev_recursion(char *s)
 {
-        len = strlen(s);
+	int len;
+	int i;
+	char *str;
+
+	len = strlen(s);
 	i = len - 1;
 	str = s;
-
-	main_print();
+	main_print(i, str);
 }
