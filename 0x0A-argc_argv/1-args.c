@@ -4,11 +4,11 @@
  * main - main
  * @argc: int
  * @argv: void
- * Return: void
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
-	argv[8] = "main";
-	printf("%d\n", argc);
+	argv[8] = "";
+	printf("%d\n", argc - 1);
 	return (0);
 }
