@@ -12,7 +12,7 @@ char *argstostr(int ac, char **av)
 	char *str;
 	int i;
 	int dy = 12;
-	
+
 	if (ac == 1)
 	{
 		dy = 0;
