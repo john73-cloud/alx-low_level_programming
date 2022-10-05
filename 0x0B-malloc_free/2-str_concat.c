@@ -20,7 +20,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len1 = 0;
 	}
-	if(s2 == NULL)
+	if (s2 == NULL)
 	{
 		len2 = 0;
 	}
