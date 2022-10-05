@@ -6,6 +6,9 @@ char *argstostr(int ac, char **av)
 {
 	char *str;
 	int i;
+	int i2;
+	int len;
+	char m[ac];
 
 	str = malloc(sizeof(char *) * ac);
 	if (str == NULL)
@@ -18,8 +21,8 @@ char *argstostr(int ac, char **av)
 	}
 	for (i = 0; i < ac; i++)
 	{
-		strcat(str, av[i]);
-		strcat(str, "\n");
+		str[i] = av[i];
+		putchar('\n');
 	}
 
 	return (str);
