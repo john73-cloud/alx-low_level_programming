@@ -20,11 +20,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (s1 == "")
+	if (strcmp(s1, "") == 0)
 	{
 		len1 = 0;
 	}
-	if (s2 == "")
+	if (strcmp(s2, "") == 0)
 	{
 		len2 = 0;
 	}
