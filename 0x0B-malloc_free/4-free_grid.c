@@ -8,6 +8,9 @@
  */
 void free_grid(int **grid, int height)
 {
-	printf("%d", height);
-	free(grid);
+	int i;
+	for (i = 0; i < height; i++)
+	{
+		free(grid);
+	}
 }
