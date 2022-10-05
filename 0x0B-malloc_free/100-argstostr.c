@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+/**
+ * argstostr - arguments to str
+ * @ac: int
+ * @av: args
+ * Return: char *
+ */
 char *argstostr(int ac, char **av)
 {
 	char *str;
