@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		t[i] = s2[i];
 	}
-	strcat(m, s1);
-	strcat(m, t);
+	strcpy(m, s1);
+	strcpy(m, t);
 	return (m);
 }
