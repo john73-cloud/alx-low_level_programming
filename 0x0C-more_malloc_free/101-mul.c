@@ -24,6 +24,9 @@ int main(int arg, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	printf("%d\n", o * t);
+	else
+	{
+		printf("%d\n", o * t);
+	}
 	return (0);
 }
