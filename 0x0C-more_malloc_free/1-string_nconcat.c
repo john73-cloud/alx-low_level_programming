@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * string_nconcat
+ * string_nconcat - concat two strings
  * @s1: string one
  * @s2: string two
  * @n: int n
@@ -17,11 +17,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int i;
 
 	printf("%d %d\n", nm, n);
-	if(m == NULL)
+	if (m == NULL)
 	{
 		return (NULL);
 	}
-	if(s2 == NULL)
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
