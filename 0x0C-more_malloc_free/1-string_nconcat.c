@@ -16,7 +16,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *t = malloc(n);
 	int i;
 
-	printf("%d %d\n", nm, n);
 	if (m == NULL)
 	{
 		return (NULL);
