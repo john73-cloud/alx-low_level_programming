@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - mul
- * @arg: length of args
- * @argv: arg values
+ * charArrayToInt - mul
+ * @arr: arrr
  * Return: void
  */
 int charArrayToInt(char *arr) {
@@ -26,7 +25,12 @@ int charArrayToInt(char *arr) {
 	value = value * flag;
 	return value;        
 }
-
+/**
+ * main - mul
+ * @arg: length of args
+ * @argv: arg values
+ * Return: void
+ */
 int main(int argc, char *argv[])
 {
 	int i;
