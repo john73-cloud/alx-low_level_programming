@@ -7,14 +7,13 @@
  * Return: void
  */
 int charArrayToInt(char *arr) {
-	int i, value, r, flag;
+	unsigned i, value, r, flag;
 
 	flag = 1;
 	i = value = 0;
-	for( i = 0 ; i<strlen(arr) ; ++i)
+	for(i = 0; i < strlen(arr); ++i)
 	{
-        // if arr contain negative number
-		if( i==0 && arr[i]=='-' )
+		if(i == 0 && arr[i] == '-')
 		{
 			flag = -1;
 			continue;
@@ -36,8 +35,6 @@ int main(int argc, char *argv[])
 	int i;
 	int i2;
 	int i3;
-	int len1 = strlen(argv[1]) - 1;
-	int len2 = strlen(argv[2])- 1;
 	char *one = argv[1];
 	char *two = argv[2];
 	int on;
