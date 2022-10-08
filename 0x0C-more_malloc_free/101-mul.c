@@ -6,23 +6,29 @@
  * @arr: arrr
  * Return: void
  */
-int charArrayToInt(char *arr) {
-	unsigned i, value, r, flag;
-
-	flag = 1;
-	i = value = 0;
-	for(i = 0; i < strlen(arr); ++i)
+char **mul(char *h, char *l)
+{
+	int i;
+	int i2;
+	int len1 = strlen(h);
+	int len2 = strlen(l);
+	char **results = malloc(sizeof(int) * len1 + len2);
+	char **w;
+	char *store = malloc(sizeof(int) * len1 + len2);
+	if (results == NULL)
 	{
-		if(i == 0 && arr[i] == '-')
+		return (NULL);
+	}
+	for (i = len2 - 1; i < 0; i++)
+	{
+		for (i2 = 0; h[i2] != '\0'; i2++)
 		{
-			flag = -1;
-			continue;
+			store[i2] = h[i2] * l[i];
 		}
-		r = arr[i] - '0';
-		value = value * 10 + r;
-    }
-	value = value * flag;
-	return value;        
+		results[i] = store;
+	}
+	w = results;
+	return (w);
 }
 /**
  * main - mul
@@ -35,15 +41,16 @@ int main(int argc, char *argv[])
 	int i;
 	int i2;
 	int i3;
+	char **results;
 	char *one = argv[1];
 	char *two = argv[2];
-	int on;
-	int tw;
+	int len1 = strlen(argv[1]);
+	int len2 = strlen(argv[2]);
 	char al[52] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
-	'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
-	'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
-	'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-	'V', 'W', 'X', 'Y', 'Z'};
+				   'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
+				   'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
+				   'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+				   'V', 'W', 'X', 'Y', 'Z'};
 
 	if (argc != 3)
 	{
@@ -69,8 +76,11 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	on = charArrayToInt(one);
-	tw = charArrayToInt(two);
-	printf("%d\n", on * tw);
+	results = mul(one, two);
+	printf("%s",results[1]);
+	for (i3 = 0; i3 < len1 + len2; i3++)
+	{
+		puts(results[i]);
+	}
 	return (0);
 }
