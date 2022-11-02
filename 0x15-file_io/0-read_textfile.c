@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (letters > 7)
 	{
 	}
-	for (i = 0; c != EOF; i++)
+	for (i = 0; c != EOF && i != letters; i++)
 	{
 		c = fgetc(ptr);
 		if (c != EOF)
